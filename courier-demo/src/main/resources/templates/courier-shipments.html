@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout-courier}">
+<head>
+    <title>Shipments</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <section class="my-5">
+        <div class="container">
+            <div class="row alert alert-warning alert-dismissible fade show">
+                <div class="col-6">
+                    <div class="bg-white alert alert-dismissible fade show">
+                        <img class="img-fluid" th:src="@{img/4.jpg}"
+                             alt="event model of courier management context"/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="text-muted"><b>Command side</b>: Given `ShipmentCreated` and `ShipmentAssigned events,
+                        when `MarkShipmentAsDelivered` command
+                        is handled, new event `ShipmentDelivered` is published by the command side component.</p>
+                    <p class="text-muted"><b>Query side</b>: Given the event `ShipmentDelivered` a `shipment` view is
+                        eventually materialized and refreshed by the query side component.</p>
+                </div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12">
+                    <div class="card">
+                        <h3 class="card-header alert alert-success">Shipments</h3>
+                        <table class="table table-striped card-body">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Courier Id</th>
+                                <th>Status</th>
+                                <th>Address</th>
+                            </tr>
+                            </thead>
+                            <tbody id="shipmentsTable">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+
+        const shipmentsTable = document.getElementById("shipmentsTable");
+
+        const shipments_source = new EventSource("/courier-shipments-sse");
+        shipments_source.withCredentials = true;
+        shipments_source.addEventListener("message", function (event) {
+            shipmentsTable.innerHTML = event.data + shipmentsTable.innerHTML;
+
+            //remove the duplicates (naive ;))
+            let arr = $("#shipmentsTable tr");
+            $.each(arr, function (i, item) {
+                let currIndex = $("#shipmentsTable tr").eq(i);
+                let matchText = currIndex.children("td").first().text();
+                $(this).nextAll().each(function (i, inItem) {
+                    if (matchText === $(this).children("td").first().text()) {
+                        $(this).remove();
+                    }
+                });
+            });
+        });
+
+
+    </script>
+</div>
+

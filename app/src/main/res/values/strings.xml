@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">SkripsiKelor</string>
+    <string name="name">name\n</string>
+    <string name="jumlah">Jumlah</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="history">History</string>
+    <string name="home">Home</string>
+    <string name="arrow">arrow</string>
+    <string name="privasi">privacy</string>
+    <string name="tentang_kami">About Us</string>
+    <string name="iconlogout">iconlogout</string>
+    <string name="keluar_akun">Logout</string>
+    <string name="Kelor">Kelor</string>
+    <string name="Pelayanan">Pelayanan Surat</string>
+    <string name="kartu_tanda_penduduk">KTP</string>
+    <string name="akta_kelahiran">Akta Kelahiran</string>
+    <string name="kartu_keluarga">Kartu Keluarga</string>
+    <string name="pengantar_nikah">Pengantar Nikah</string>
+    <string name="pernyataan_sku">Pernyataan SKU</string>
+    <string name="skck">SKCK</string>
+    <string name="ahli_waris">Ahli Waris</string>
+    <string name="skdu">SKDU</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="berita">Berita Terkini</string>
+    <string name="NIK">NIK</string>
+    <string name="Nama">Nama</string>
+    <string name="TempatTanggalLahir">Tempat Tanggal Lahir</string>
+    <string name="JenisKelamin">Jenis Kelamin</string>
+    <string name="Alamat">Alamat</string>
+    <string name="Rt">RT</string>
+    <string name="Rw">RW</string>
+    <string name="Agama">Agama</string>
+    <string name="Status">Status Perkawinan</string>
+    <string name="Pekerjaan">Pekerjaan</string>
+    <string name="Kewarganegaraan">Kewarganegaraan</string>
+    <string name="FormKartuTandaPenduduk">Kartu Tanda Penduduk</string>
+    <string name="FotocopyEKTP">Fotocopy E-KTP </string>
+    <string name="FotoCopyBukuNikah">Foto Copy Buku Nikah</string>
+    <string name="suratPersetujuanRT">Surat Persetujuan RT</string>
+    <string name="Btn_selanjutnya">Selanjutnya</string>
+    <string name="button_cari_nik">Cari Nik</string>
+    <string name="button_selanjutnya">Selanjutnya</string>
+    <string name="No_KTP">Nomor KTP\n</string>
+    <string name="tempat">Tempat</string>
+    <string name="TanggalLahir">Tgl Lahir</string>
+    <string name="JenisUsaha">Jenis Usaha</string>
+    <string name="lokasi_usaha">Lokasi Usaha</string>
+    <string name="submit">Submit</string>
+    <string name="TambahBerita">Tambah Berita</string>
+    <string name="gallery">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="desc">Deskripsi Berita</string>
+    <string name="upload">Upload</string>
+    <string name="JudulBerita">Judul Berita</string>
+    <string name="login">Login</string>
+    <string name="status">Status</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="nama_surat">Nama Surat</string>
+    <string name="created_at">Created At</string>
+    <string name="surat_keterangan_usaha">Keterangan Usaha</string>
+    <string name="pindah_satu_kecamatan">Pindah Satu Kecamatan</string>
+    <string name="pindah_luar_kabupaten">Pindah Luar Kabupaten</string>
+    <string name="pindah_satu_kabupaten">Pindah Satu Kabupaten</string>
+    <string name="Keterangan_lahir">Keterangan Lahir</string>
+    <string name="Surat_keterangan_kematian">Keterangan Kematian</string>
+    <string name="Keterangan_belum_menikah">Keterangan Belum Menikah</string>
+    <string name="SKKM_Sekolah">SKKM Sekolah</string>
+    <string name="SKKM_rumahSakit">SKKM Rumah Sakit</string>
+    <string name="SKTTS">SK Tinggal Sementara</string>
+    <string name="perbedaan_nama">Perbedaan Nama</string>
+    <string name="password">Password</string>
+    <string name="message_validation_nik">NIK HARUS DIISI\n</string>
+    <string name="message_validation_password">PASSWORD HARUS DIISI</string>
+    <string name="login_error">Duh Error Nih</string>
+    <string name="Data_Usaha">Data Usaha</string>
+    <string name="NomorSurat">Nomor Surat</string>
+    <string name="Masukkan_Nomor_Surat">Masukkan Nomor Surat</string>
+    <string name="nomor_registrasi">Nomor Registrasi</string>
+    <string name="Masukkan_nomor_Registrasi">Masukkan Nomor Regitrasi</string>
+    <string name="Nama_Perusahaan">Nama Perusahaan</string>
+    <string name="Masukkan_Nama_Perusahaan">Masukkan Nama Perusahaan</string>
+    <string name="Jenis_Usaha">Jenis Usaha</string>
+    <string name="Masukkan_Jenis_Usaha">Masukkan Jenis Usaha</string>
+    <string name="Penanggung_Jawab">Penanggung Jawab</string>
+    <string name="Masukkan_Penanggung_Jawab">Masukkan Penanggung Jawab</string>
+    <string name="Jumlah_Karyawan">Jumlah Karyawan\n</string>
+    <string name="Masukkan_Jumlah_Karyawan">Masukkan Jumlah_Karyawan</string>
+    <string name="status_bangunan">Status Bangunan</string>
+    <string name="Masukkan_status_bangunan">Masukkan Status Bangunan</string>
+    <string name="alamat_perusahaan">Alamat Perusahaan</string>
+    <string name="Masukkan_alamat_perusahaan">Masukkan Alamat Perusahaan</string>
+    <string name="Tanggal_Pendirian_diSurat">Tanggal Pendirian Di Surat</string>
+    <string name="Masukkan_Tanggal_Pendirian">Masukkan Tanggal Pendirian</string>
+    <string name="Masukkan_Lokasi_Usaha">Masukkan Lokasi Usaha</string>
+    <string name="coba_lagi">coba lagi\n</string>
+    <string name="PersyaratanKartuKeluarga">Persyaratan Kartu Keluarga</string>
+    <string name="surat_pengantar_rt">Surat Pengantar RT</string>
+    <string name="KelahiranBidan_Paraji">Kelahiran Bidan / Paraji</string>
+    <string name="DiisiBilaAdaPenambahanAnggota">Diisi Jika Ada Penambahan Anggota</string>
+    <string name="FotoCopyPBB">FotoCopy PBB</string>
+    <string name="suratKepemilikan_sewa">Surat Kepemilikan/Sewa/Kontrak</string>
+    <string name="izinLingkungan">Izin Lingkungan Perusahaan Baru</string>
+    <string name="PersyaratanSDKU">Persyaratan SDKU</string>
+    <string name="suratKeteranganDariSekolah">Surat Keterangan Dari Sekolah</string>
+    <string name="suratKeteranganDariRumahSakit">Surat Keterangan Dari Rumah Sakit</string>
+    <string name="PersyaratanSKKMRumahsakit">Persyaratan SKKM Rumah Sakit</string>
+    <string name="PersyaratanSKKMSekolah">Persyaratan SKKM Sekolah</string>
+    <string name="DataKeterangan">Data Keterangan</string>
+    <string name="asalSekolah">Asal Sekolah</string>
+    <string name="StatusHubunganDalamkeluarga">Status Hubungan Dalam Keluarga</string>
+    <string name="JudulFormulir">Judul Formulir</string>
+    <string name="TanggalSuratRawatInap">Tanggal Surat Rawat Inap</string>
+    <string name="RumahSakit">Rumah Sakit</string>
+    <string name="TanggalKeteranganSurat">Tanggal Keterangan Surat</string>
+    <string name="data_ayah_ibu"><![CDATA[Data Ayah & Ibu]]></string>
+    <string name="pendidikanTerakhir">Pendidikan Terakhir</string>
+    <string name="alamatSebelumnya">Alamat Sebelumnya</string>
+    <string name="data_warga">Data Warga</string>
+    <string name="golongan_darah">Golongan Darah</string>
+    <string name="data_surat">Data Surat</string>
+    <string name="no_paspor">No. Paspor</string>
+    <string name="tgl_berakhir_paspor">Tgl. berakhir Paspor</string>
+    <string name="akta_lahir_surat_lahir">Akta lahir/Surat lahir</string>
+    <string name="data_status_perkawinan">Data Status Perkawinan</string>
+    <string name="belum_kawin">Belum kawin</string>
+    <string name="kawin">Kawin</string>
+    <string name="cerai_hidup">Cerai hidup</string>
+    <string name="cerai_mati">Cerai mati</string>
+    <string name="data_kesehatan">Data Kesehatan</string>
+    <string name="penyandang_cacat">Penyandang Cacat</string>
+    <string name="kelainan_fisik_mental">Kelainan Fisik Mental</string>
+    <string name="nik_ayah">NIK Ayah</string>
+    <string name="nama_ayah">Nama Ayah</string>
+    <string name="nik_ibu">NIK Ibu</string>
+    <string name="nama_ibu">Nama Ibu</string>
+    <string name="tambah_anggota">Tambah anggota</string>
+    <string name="buat_surat">Buat Surat</string>
+    <string name="pilih_dusun">Pilih Dusun</string>
+    <string name="pilih_rw">Pilih RW</string>
+    <string name="pilih_rt">Pilih RT</string>
+    <string name="kode_pos">Kode Pos</string>
+    <string name="Dusun">Dusun</string>
+    <string name="data_keluarga">Data Keluarga</string>
+    <string name="masukkan_nomor_registrasi">Masukkan Nomor Registrasi</string>
+    <string name="cth_jl_bogor_raya">cth: Jl Bogor raya</string>
+    <string name="logout">Logout</string>
+    <string name="ya">Ya</string>
+    <string name="description">Deskripsi</string>
+
+
+    <string-array name="jenis_kelamin_array">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="agama_array">
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Konghucu</item>
+    </string-array>
+
+    <string-array name="golongan_darah_array">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+
+    <string-array name="status_keluarga_array">
+        <item>Kepala Keluarga</item>
+        <item>Istri</item>
+        <item>Anak</item>
+    </string-array>
+
+    <string-array name="pendidikan_terakhir_array">
+        <item>Tidak/Belum Sekolah</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>D3</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+
+    <string-array name="akta_kelahiran_array">
+        <item>Tidak Ada</item>
+        <item>Ada</item>
+    </string-array>
+
+    <string-array name="penyandang_cacat_array">
+        <item>Tidak Ada</item>
+        <item>Ada</item>
+    </string-array>
+
+    <string-array name="kelahiran_fisik_mental_array">
+        <item>Tidak Ada</item>
+        <item>Ada</item>
+    </string-array>
+
+    <string-array name="rt_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="rw_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="dusun_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+    </string-array>
+
+    <string name="berita1_description">Pemerintah Desa Cipayung fokus pada pembangunan infrastruktur jalan desa untuk tahun 2024. Program ini diharapkan dapat meningkatkan aksesibilitas dan mempercepat perekonomian desa. Proyek ini mencakup perbaikan jalan utama dan pembangunan jalan penghubung antar dusun yang telah direncanakan sejak awal tahun.</string>
+    <string name="berita2_description">Selama 23 tahun, warga desa di Megamendung mempertanyakan tapal batas antara dua desa yang sering menjadi sumber sengketa. Pemerintah Kabupaten Bogor akhirnya turun tangan untuk menyelesaikan masalah ini dengan melakukan pemetaan ulang dan melibatkan tokoh masyarakat dari kedua desa untuk mencapai kesepakatan bersama.</string>
+    <string name="berita3_description">Bencana tanah longsor terjadi di Desa Cipayung Girang, Kecamatan Megamendung, yang menyebabkan jembatan ambruk dan pondasi beberapa rumah warga tergerus. Bencana ini menimbulkan kekhawatiran di kalangan warga karena potensi longsor susulan. Pemerintah desa telah menyiapkan bantuan darurat dan mengungsikan warga yang terkena dampak langsung.</string>
+    <string name="berita4_description">Dalam rangka memperingati hari ulang tahun Desa Cipayung, pemerintah desa memberikan diskon spesial untuk berbagai layanan dan produk lokal. Program diskon ini bertujuan untuk mendorong partisipasi warga dalam acara perayaan dan mendukung pengusaha lokal agar lebih berkembang.</string>
+    <string name="berita5_description">Desa Cipayung akan menggelar festival budaya yang pertama kalinya tahun depan. Acara ini akan menampilkan berbagai kesenian tradisional, kerajinan tangan, dan kuliner khas desa. Festival ini diharapkan dapat menjadi daya tarik wisatawan serta melestarikan warisan budaya desa yang kaya dan beragam.</string>
+    <string name="berita6_description">Program kesehatan desa terbaru diluncurkan oleh Pemerintah Desa Cipayung, dengan fokus pada peningkatan layanan kesehatan untuk masyarakat. Program ini mencakup pemeriksaan kesehatan gratis, penyuluhan kesehatan, dan pengadaan fasilitas medis di posyandu desa. Tujuannya adalah untuk meningkatkan kualitas hidup warga desa melalui pelayanan kesehatan yang lebih baik.</string>
+    <string name="hapus">hapus</string>
+</resources>

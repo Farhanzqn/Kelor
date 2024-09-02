@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.zidan.skripsikelor.fragment.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/suratSDKUFragment"
+        android:name="com.zidan.skripsikelor.fragment.surat.sdku.SdkuFragment"
+        android:label="Surat SDKU"
+        tools:layout="@layout/fragment_sdku">
+        <action
+            android:id="@+id/action_suratSDKUFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zidan.skripsikelor.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_skkmRumahSakit"
+            app:destination="@id/skkmRumahSakitFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_skkmSekolah"
+            app:destination="@id/skkmSekolahFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_kartuKeluarga"
+            app:destination="@id/kartuKeluargaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pernyataanSKUFragment"
+            app:destination="@id/pernyataanSKUFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_suratSDKUFragment"
+            app:destination="@id/suratSDKUFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_detailNewsFragment"
+            app:destination="@id/detailBeritaFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.zidan.skripsikelor.fragment.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/detailBeritaFragment"
+        android:name="com.zidan.skripsikelor.fragment.detailBerita.DetailBeritaFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_detail_berita" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.zidan.skripsikelor.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+
+
+
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.zidan.skripsikelor.fragment.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/pernyataanSKUFragment"
+        android:name="com.zidan.skripsikelor.fragment.surat.pernyataanSKU.PernyataanSKUFragment"
+        android:label="Pernyataan SKU"
+        tools:layout="@layout/fragment_pernyataan_s_k_u">
+        <action
+            android:id="@+id/action_pernyataanSKUFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/kartuKeluargaFragment"
+        android:name="com.zidan.skripsikelor.fragment.surat.KK.KartuKeluargaFragment"
+        android:label="fragment_kartu_keluarga"
+        tools:layout="@layout/fragment_kartu_keluarga">
+        <action
+            android:id="@+id/action_KartuKeluargaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/skkmRumahSakitFragment"
+        android:name="com.zidan.skripsikelor.fragment.surat.skkmRumahSakit.SkkmRumahSakitFragment"
+        android:label="fragment_skkm_rumah_sakit"
+        tools:layout="@layout/fragment_skkm_rumah_sakit" >
+        <action
+            android:id="@+id/action_pernyataanSkkmRumahSakit_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/skkmSekolahFragment"
+        android:name="com.zidan.skripsikelor.fragment.surat.skkmSekolah.SkkmSekolahFragment"
+        android:label="fragment_skkm_sekolah"
+        tools:layout="@layout/fragment_skkm_sekolah">
+        <action
+            android:id="@+id/action_pernyataanSkkmSekolah_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

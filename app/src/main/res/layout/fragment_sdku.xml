@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/pextrabold"
+        android:gravity="center"
+        android:text="@string/skdu"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="370dp"
+        android:layout_height="657dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_card"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="621dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <!-- First TextView and EditText pair -->
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="107dp"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/No_KTP" />
+
+                <EditText
+                    android:id="@+id/ed_nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/NIK"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <!-- Second TextView and EditText pair -->
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Nama" />
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/Nama"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <!-- Third TextView and EditText pair -->
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/tempat" />
+
+                <EditText
+                    android:id="@+id/ed_tempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/tempat"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_tglLahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/TanggalLahir" />
+
+                <EditText
+                    android:id="@+id/ed_tglLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:hint="@string/TanggalLahir"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_jk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/JenisKelamin" />
+
+                <Spinner
+                    android:id="@+id/spinner_jenis_kelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_agama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Agama" />
+
+                <EditText
+                    android:id="@+id/ed_agama"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/Agama"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+                <TextView
+                    android:id="@+id/tv_pekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Pekerjaan" />
+
+                <EditText
+                    android:id="@+id/ed_pekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/Pekerjaan"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Alamat" />
+
+                <EditText
+                    android:id="@+id/ed_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/Alamat"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_kewarganegaraaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Kewarganegaraan" />
+
+                <EditText
+                    android:id="@+id/ed_kewarganegaraan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/Kewarganegaraan"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_DataUsaha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/pextrabold"
+                    android:text="@string/Data_Usaha" />
+
+                <TextView
+                    android:id="@+id/tv_NomorSurat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/NomorSurat" />
+
+                <EditText
+                    android:id="@+id/ed_NomorSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_Nomor_Surat"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_nomor_registrasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/nomor_registrasi" />
+
+                <EditText
+                    android:id="@+id/ed_nomor_registrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:hint="@string/Masukkan_nomor_Registrasi"
+                    android:textStyle="italic"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+                <TextView
+                    android:id="@+id/tv_tanggal_pendirian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Tanggal_Pendirian_diSurat" />
+
+                <EditText
+                    android:id="@+id/ed_tanggal_pendirian"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_Tanggal_Pendirian"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_nama_perusahaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Nama_Perusahaan" />
+
+                <EditText
+                    android:id="@+id/ed_nama_perusahaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_Nama_Perusahaan"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_jenis_usaha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Jenis_Usaha" />
+
+                <EditText
+                    android:id="@+id/ed_jenis_usaha"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_Jenis_Usaha"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+                <TextView
+                    android:id="@+id/tv_lokasi_usaha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/lokasi_usaha" />
+
+                <EditText
+                    android:id="@+id/ed_lokasi_usaha"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_Lokasi_Usaha"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+                <TextView
+                    android:id="@+id/tv_Penanggung_Jawab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Penanggung_Jawab" />
+
+                <EditText
+                    android:id="@+id/ed_Penanggung_Jawab"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_Penanggung_Jawab"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_jumlah_karyawan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/Jumlah_Karyawan" />
+
+                <EditText
+                    android:id="@+id/ed_jumlah_karyawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_Jumlah_Karyawan"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_status_bangunan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/status_bangunan" />
+
+                <EditText
+                    android:id="@+id/ed_status_bangunan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_status_bangunan"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_alamat_perusahaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/psemibold"
+                    android:text="@string/alamat_perusahaan" />
+
+                <EditText
+                    android:id="@+id/ed_alamat_perusahaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edit"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="@string/Masukkan_alamat_perusahaan"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp" />
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/background"
+                    android:padding="16dp"
+                    android:text="@string/buat_surat"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

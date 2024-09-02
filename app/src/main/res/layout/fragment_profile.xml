@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_people"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/psemibold"
+        android:text="@string/profile"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edit"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_nik_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIK:"
+                android:fontFamily="@font/psemibold"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_nik_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/pmedium"
+                android:textStyle="italic"
+                android:layout_alignBaseline="@id/tv_nik_label"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/tv_nama_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama:"
+                android:fontFamily="@font/psemibold"
+
+                android:textStyle="bold"
+                android:layout_below="@id/tv_nik_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_nama_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pmedium"
+                android:textStyle="italic"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBaseline="@id/tv_nama_label"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pekerjaan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pekerjaan:"
+                android:textStyle="bold"
+                android:fontFamily="@font/psemibold"
+
+                android:layout_below="@id/tv_nama_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_pekerjaan_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBaseline="@id/tv_pekerjaan_label"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/pmedium"
+                android:textStyle="italic"
+               />
+
+            <TextView
+                android:id="@+id/tv_agama_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agama:"
+                android:textStyle="bold"
+                android:fontFamily="@font/psemibold"
+
+                android:layout_below="@id/tv_pekerjaan_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_agama_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/pmedium"
+                android:textStyle="italic"
+                android:layout_alignBaseline="@id/tv_agama_label"
+                android:layout_marginStart="8dp"
+               />
+
+            <TextView
+                android:id="@+id/tv_alamat_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat:"
+                android:textStyle="bold"
+                android:fontFamily="@font/psemibold"
+
+                android:layout_below="@id/tv_agama_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_alamat_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/pmedium"
+                android:textStyle="italic"
+                android:layout_alignBaseline="@id/tv_alamat_label"
+                android:layout_marginStart="8dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_keluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_info"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="4dp"
+        android:radius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/card_4_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/profile"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/iconlogout" />
+
+            <TextView
+                android:id="@+id/card_4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/keluar_akun"
+                android:textSize="16sp"
+                android:fontFamily="@font/psemibold"
+                android:layout_toEndOf="@id/card_4_icon"
+                android:layout_toStartOf="@id/card_4_arrow"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp" />
+
+            <ImageView
+                android:id="@+id/card_4_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/arrow" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+package com.zidan.skripsikelor.data.response
+
+data class KartuKeluargaRequest(
+    val no_reg : String,
+    val rt : String,
+    val rw : String,
+    val dusun : String,
+    val nik: String,
+    val nama: String,
+    val alamat: String,
+    val tempatLahir: String,
+    val tanggalLahir: String,
+    val jenisKelamin: String,
+    val agama: String,
+    val golonganDarah: String,
+    val statusKeluarga: String,
+    val pekerjaan: String,
+    val pendidikan: String,
+    val noPaspor: String,
+    val tanggalBerakhirPaspor: String,
+    val aktaLahir: String,
+    val aktaKelahiran: String,
+    val statusPerkawinan: String,
+    val penyandangCacat: String,
+    val kelahiranFisikMental: String,
+    val nikAyah: String,
+    val namaAyah: String,
+    val nikIbu: String,
+    val namaIbu: String,
+
+)

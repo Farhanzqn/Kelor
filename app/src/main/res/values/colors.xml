@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dodgerGreen">#1A4D2E</color>
+    <color name="colorPrimaryDark">#133821</color>
+    <color name="colorAccent">#FFA726</color>
+
+    <color name="drill">#F8E559</color>
+    <color name="background">#F6F5F2</color>
+
+    <color name="light_green">#90EE90</color>
+    <color name="indicator_inactive_color">#B0B0B0</color>
+
+    <color name="bgEdit">#FF7D29</color>
+
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="disabled_background">#D3D3D3</color>
+
+</resources>

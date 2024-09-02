@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1023334962694",
+    "project_id": "skripsikelor-b954d",
+    "storage_bucket": "skripsikelor-b954d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023334962694:android:e67befd85b3f8d745e5587",
+        "android_client_info": {
+          "package_name": "com.zidan.skripsikelor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsiCco-nWuNgKP9ZB9vv5ISuwyQNgzdds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

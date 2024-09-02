@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/disabled_background"/> <!-- Warna abu-abu -->
+    <corners android:radius="8dp"/>
+</shape>
